@@ -1,0 +1,14 @@
+.Invoice {
+	background-color: #f2f3f5;
+	flex-grow: 1;
+	padding: 3rem 4.2rem 5.8rem 3rem;
+
+	&-heading {
+		text-transform: uppercase;
+		font-weight: 700;
+		color: #b1b9c3;
+		font-size: 1.2rem;
+		letter-spacing: 1px;
+		margin-bottom: 3rem;
+	}
+}

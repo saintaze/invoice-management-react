@@ -1,0 +1,111 @@
+.InvoiceSnapshot{
+	padding: 1.8rem 2.5rem;
+
+	// &:not(:last-child){
+		border-bottom: 1px solid #3c444e;
+	// }
+
+	&:hover {
+		background-color: #404b57;
+		transition: all .3s;
+		cursor: pointer;
+		
+	}
+
+	&:hover &-invoiceInfo, &:hover &-customerTotal, &:hover &-itemsInfo {
+		color: white;
+		transition: all .3s;
+	}
+
+	&-metaInfo{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: .5rem;
+	}
+
+	&-invoiceInfo{
+		// color: #9ca8ba;
+		color: #9fabbd;
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
+
+	&-invoiceLabel{
+
+	}
+
+	&-invoiceHash{
+		display: inline-block;
+		margin: 0 .2rem 0 .7rem;
+	}
+
+	&-invoiceSeparator{
+		display: inline-block;
+		margin: 0 .7rem 0 .5rem;
+	}
+
+	&-invoiceNumber{
+
+	}
+
+	&-dateInfo{
+		color: #6e7986;
+		color: #747f8c;
+		font-size: 1.15rem;
+		font-weight: 500;
+	}
+
+	&-dateSeparator{
+		display: inline-block;
+		margin: 0 .5rem;
+	}
+
+	&-dateDay{
+
+	}
+
+	&-itemsInfo {
+		color: #9ca8ba;
+		font-size: 1.4rem;
+		font-weight: 500;
+	}
+
+
+	&-itemsLabel {
+
+	}
+
+	&-itemsSeparator {
+		display: inline-block;
+		margin: 0 .5rem;
+	}
+
+	&-itemsCount {
+
+	}
+
+	&-customerInfo {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: -3px;
+	}
+
+	&-customerName {
+		// color: #6299e7;
+		color: #64a3f0;
+		text-transform: capitalize;
+		font-size: 1.25rem;
+		font-weight: 600;
+		letter-spacing: .2px;
+
+	}
+
+	&-customerTotal {
+		color: #9ca8ba;
+		font-weight: 600;
+		font-size: 1.56rem;
+	}
+	
+}

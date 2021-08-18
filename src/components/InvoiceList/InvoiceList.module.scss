@@ -1,0 +1,28 @@
+.InvoiceList{
+	background-color: #313942;
+	flex-basis: 24%;
+
+	&-heading {
+		font-size: 1.26rem;
+		padding: 1rem 2.5rem;
+		font-weight: 700;
+		letter-spacing: .3px;
+		
+	}
+
+	&-heading-text {
+		text-transform: uppercase;
+		color: #616c77;
+	}
+
+	&-heading-separator {
+		display: inline-block;
+		margin: 0 0.5rem;
+		color: #676e78;
+	}
+
+	&-heading-count {
+		color: #95999f;
+		display: inline-block;
+	}
+}

@@ -1,0 +1,45 @@
+.Navbar {
+	height: 7.2rem;
+	background-color: #336399;
+	color: white;
+	padding: 2.5rem;
+	display: flex;
+	align-items: center;
+	font-weight: 500;
+	letter-spacing: .3px;
+	position: relative;
+
+	&-brand {
+		font-size: 1.9rem;
+	}
+
+	&-plusImage {
+		width: 2.2rem;
+	}
+
+	&-addInvoiceBtn{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #fd6aa7;
+		border: none;
+		outline: none;
+		color: white;
+		width: 5.9rem;
+		height: 5.9rem;
+		border-radius: 50%;
+		//  box-shadow: 0 4.3px 3.9px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, .15);
+		 box-shadow: 0 1.2px 3px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, .15);
+
+		top: 5.2rem;
+		position: absolute;
+		right: 5.5rem;
+		font-size: 4.2rem;
+
+		&:hover {
+			background-color: darken($color: #ff60a1, $amount: 5);
+			cursor: pointer;
+			transition: all .3s;
+		}
+	}
+}
