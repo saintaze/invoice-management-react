@@ -1,23 +1,26 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import { useDispatch } from 'react-redux';
 
+import {setActiveNewInvoiceView} from '../../store/slices/invoiceSlice';
+import { setShowModal } from  '../../store/slices/modalSlice';
+import newInvoiceView from '../../enums/newInvoiceView';
 import classes from './Navbar.module.scss';
-import plusImage from '../../images/plus-white@3x.png';
+
 
 const Navbar = props => {
+	const dispatch = useDispatch();
+
+	const openModal = () => {
+		dispatch(setActiveNewInvoiceView(newInvoiceView.CUSTOMER_DETAILS))
+		dispatch(setShowModal({show: true}))
+	}
+
 	return (
 		<div className={classes.Navbar}>
 			<span className={classes['Navbar-brand']}>Dashboard</span>
-			<button className={classes['Navbar-addInvoiceBtn']}>
-				{/* <img className={classes['Navbar-plusImage']} src={plusImage} alt="plusImage" /> */}
-				&#43;
-			</button>
+			<button className={classes['Navbar-addInvoiceBtn']} onClick={openModal}>&#43;</button>
 		</div>
 	)
-}
-
-Navbar.propTypes = {
-
 }
 
 export default Navbar

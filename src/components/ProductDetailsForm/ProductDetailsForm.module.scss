@@ -1,0 +1,488 @@
+.ProductDetails {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: space-between;
+	
+	&-header {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		margin-top: 1rem;
+	}
+
+	&-headerLeft {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		line-height: 1;
+	}
+
+	&-headerTopRowLeft {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&-heading {
+		text-transform: capitalize;
+		font-size: 1.75rem;
+		font-weight: 600;
+		word-spacing: 1px;
+		letter-spacing: .3px;
+		margin-right: 4rem;
+		color: #3a3a3a;
+	}
+
+	&-orderNumber {
+		font-weight: 600;
+		color: #8c9096;
+		text-transform: uppercase;
+		font-size: 1.32rem;
+		letter-spacing: .6px;
+		word-spacing: .5px;
+	}
+
+	&-headerBottomRowLeft {
+		margin-top: 2rem;
+	}
+
+	&-formType {
+		font-weight: 500;
+		letter-spacing: .3px;
+		text-transform: uppercase;
+		font-size: 1.32rem;
+		color: #444;
+		word-spacing: 1px;
+		letter-spacing: .5px;
+		font-weight: 600;
+	}
+
+	&-headerRight {
+		display: flex;
+	}
+
+	&-detailsBox {
+		text-align: right;
+		margin-right: .6rem;
+	}
+
+	&-detailsLabel {
+		color: #aaa;
+		text-transform: uppercase;
+		font-size: 1rem;
+		font-weight: 600;
+		letter-spacing: .1px;
+		margin-bottom: .6rem;
+	}
+
+	&-customerName {
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 1.23rem;
+		color: #444;
+		margin-bottom: .4rem;
+	}
+
+	&-email {
+		font-size: 1.2rem;
+		color: #999;
+		letter-spacing: .4px;
+		font-weight: 600;
+	}
+
+	&-actions {
+		display: flex;
+  	align-items: flex-end;
+	}
+
+	&-edit {
+		background-color: white;
+		border: none;
+		outline: none;
+		font-size: 3.4rem;
+		color: #5ca4f7;
+		font-weight: 500;
+		margin-right: 2rem;
+
+		&:hover {
+			transition: all .3s;
+			cursor: pointer;
+			color: darken($color: #5ca4f7, $amount: 5);
+		}
+	}
+
+	&-close {
+		color: #d6d6d6;
+		font-size: 4.7rem;
+		font-weight: 300;
+		margin-left: 1.8rem;
+		position: absolute;
+		top: -38px;
+		right: -20px;
+
+		&:hover {
+			color: darken($color: #cfd1d3, $amount: 8);
+			transition: all .3s;
+			cursor: pointer;
+		}
+	}
+
+	&-body {
+		margin-top: 1.7rem;
+	}
+
+	&-formRow {
+		display: flex;
+		justify-content: space-between;
+
+		&:last-of-type {
+			margin-bottom: 3rem;
+		}
+	}
+
+	&-formCol1 {
+		flex: 1.1;
+		margin-right: 4.2rem;
+	}
+
+	&-formCol2 {
+		flex: .9;
+	}
+
+	&-formControl {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 4.2rem;
+	}
+
+	&-formControlLabel {
+		text-transform: capitalize;
+		font-size: 1.34rem;
+		font-weight: 500;
+		letter-spacing: .2px;
+		word-spacing: 1px;
+		color: #4b4b4b;
+		margin-bottom: .5rem;
+	}
+
+	&-createName,
+	&-createQuantity,
+	&-createPrice,
+	&-formControlMetaWrapper  {
+		border: 1px solid #e0e2e8;
+		border-radius: 4px;		
+		padding: 1.3rem 1.3rem;
+		outline: none;
+		font-family: inherit;
+		color: #777;
+		font-weight: 500;
+
+		&::placeholder {
+			color: #c8ced2;
+			font-size: 1.38rem;
+			font-weight: 500;
+			letter-spacing: .4px;
+			word-spacing: .6px;
+		}
+
+		&:focus {
+			transition: all .3s;
+			border-color: rgb(181, 202, 240);
+		}
+	}
+
+	&-formControlPhoneWrapper {
+		border: 1px solid #d6d9e0;
+		border-radius: 4px;		
+		display: flex;
+		overflow: hidden;
+	}	
+
+	&-footer {
+		height: 8.6rem;
+		background-color: #eef0f2;
+		margin: 0 -4rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&-proceedBtn {
+		background-color: #67a7ff;
+		border-radius: 3px;
+		margin-right: 2.2rem;
+		color: white;
+		border: none;
+		outline: none;
+		text-transform: uppercase;
+		font-size: 1.36rem;
+		font-weight: 600;
+		padding: 1.4rem 5.2rem;
+		letter-spacing: .2px;
+		margin-top: .2rem;
+		box-shadow: 0px 0px 4px rgba(0, 0, 0, .1);
+		width: 173px;
+
+		&:hover {
+			background-color: darken($color: #67a7ff, $amount: 4);
+			transition: all .3s;
+			cursor: pointer;
+		}
+	}
+
+	&-col1 {
+		flex: 54%;
+		font-weight: 500;
+		font-size: 1.2rem;
+		letter-spacing: .3px;
+	}
+
+	&-col2 {
+		flex: 17.5%;
+		text-align: center;
+		letter-spacing: .3px;
+	}
+
+	&-col3 {
+		flex: 17.5%;
+		text-align: center;
+		letter-spacing: .3px;
+	}	
+
+	&-tableHeaderRow {
+		display: flex;
+		border-top: 1px solid #e1e3e9;
+		border-bottom: 1px solid #e1e3e9;
+		color: #abb4be;
+		padding: 1.5rem 2.6rem;
+		text-transform: uppercase;
+		font-size: 1.19rem;
+		letter-spacing: .2px;
+	}
+
+	&-tableBodyRow {
+		display: flex;
+		font-size: 1.33rem;
+		letter-spacing: .2px;
+		text-transform: capitalize;
+		padding: 2rem 2.6rem;
+		border-bottom: 1px solid #f3f4f6;
+	}
+
+	&-tableFooterRow{
+		display: flex;
+		padding: 1.6rem 2.6rem;
+		justify-content: space-between;
+	}
+
+	&-nameLabel {
+		font-weight: 500;
+	}
+
+	&-priceLabel {
+		text-align: right;
+		font-weight: 500;
+	}
+
+	&-price {
+		font-weight: 500;
+		text-align: right;
+		display: inline-block;
+	}
+
+	&-quantityLabel{
+		text-align: left;
+		font-weight: 500;
+	}
+
+	&-quantity {
+		text-align: left;
+		padding-left: 1.2%;
+	}
+
+	&-tableBodyRowCreate {
+		padding: 1.5rem 2.6rem;
+		padding-right: 0;
+	}
+
+	&-colCreate1 {
+		margin-right: 2rem;
+		flex-basis: 71%;
+	}
+
+	&-colCreate2 {
+		margin-right: 2rem;
+	}
+
+	&-colCreate3 {
+		margin-right: 2rem;
+	}
+
+	&-colCreate4 {
+		flex-basis: 10%;
+	}
+
+	&-createName {
+		width: 100%;
+	}
+
+	&-createQuantity {
+		width: 100% !important;
+	}
+
+	&-createPrice {
+		text-align: right;
+		width: 100%; 
+	}
+
+	&-createBtn {
+		border: 2px solid #72adf9;
+		border-radius: 4px;		
+		padding: 1.2rem 1.3rem;
+		outline: none;
+		font-family: inherit;
+		color: #72adf9;
+		background-color: white;
+		font-weight: 600;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&:hover {
+			transition: all .3s;
+			cursor: pointer;
+			color: darken($color: #72adf9, $amount: 8);
+			border-color: darken($color: #72adf9, $amount: 8);
+		}
+	}
+
+	&-enterImage {
+		width: 20px;
+	}
+
+	&-editImage {
+		width: 50%;
+	}
+
+	&-taxDiscountWrapper, &-subTotalWrapper{
+		display: flex;
+		align-items: center;
+	}
+
+	&-formControlMetaWrapper {
+		margin-right: 2rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 12rem;
+		line-height: 1;
+	}
+
+	&-createTax,
+	&-createDiscount {
+		border: none;
+		outline: none;
+		width: 100%;
+		font-family: inherit;
+		color: #777;
+		font-weight: 500;
+
+		&::placeholder {
+			color: #c8ced2;
+			font-size: 1.38rem;
+			font-weight: 500;
+			letter-spacing: .4px;
+			word-spacing: .6px;
+		}
+
+		&:focus {
+			transition: all .3s;
+			border-color: rgb(181, 202, 240);
+		}
+	}	
+
+	&-formControlAddon {
+		margin-left: 1rem;
+		color: #444;
+		font-weight: 700;
+		font-size: 1.5rem;
+		position:  relative;
+		top: 1px;
+	}
+
+	&-subTotalLabel{
+		font-size: 1.35rem;
+		font-weight: 500;
+		color: #5a6a6a;
+		letter-spacing: .3px;
+		margin-right: 7rem;
+	}	
+
+	&-subTotalVal {
+		font-weight: 600;
+		font-size: 1.33rem;
+	}
+
+	&-footerLeft {
+		display: flex;
+		align-items: center;
+		margin-left: 6.4rem;
+	}	
+
+	&-footerRight{
+		display: flex;
+		align-items: center;
+	}	
+
+	&-TaxDiscountValWrapper {
+		display: flex;
+		flex-direction: column;
+		width: 16.5rem;
+		padding-left: 1rem;
+	}
+
+	&-TaxDiscountLabel, &-GrandTotalLabel{
+		color: #646e81;
+		font-weight: 500;
+		font-size: 1.4rem;
+	}	
+
+	&-TaxDiscountVal{
+		color: #acb4be;
+		font-weight: 600;
+		font-size: 1.5rem;
+		letter-spacing: .8px;
+	}
+
+	&-GrandTotalWrapper{
+		display: flex;
+		flex-direction: column;
+		margin-right: 10rem;
+	}
+
+	&-GrandTotalVal{
+		color: #3a3a3a;
+		font-weight: 600;
+		font-size: 1.5rem;
+		letter-spacing: .8px;
+	}
+
+	&-scrollable {
+		height: 17rem;
+		overflow-y: scroll;
+
+		&::-webkit-scrollbar {
+			width: .8rem;
+		}
+		
+		&::-webkit-scrollbar-track {
+			border: 1px solid #eee;
+		}
+		
+		&::-webkit-scrollbar-thumb {
+			background-color: #e1e3e9;
+		}
+	}
+}

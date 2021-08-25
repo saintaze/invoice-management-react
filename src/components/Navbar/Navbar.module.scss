@@ -13,10 +13,6 @@
 		font-size: 1.9rem;
 	}
 
-	&-plusImage {
-		width: 2.2rem;
-	}
-
 	&-addInvoiceBtn{
 		display: flex;
 		align-items: center;
@@ -28,11 +24,9 @@
 		width: 5.9rem;
 		height: 5.9rem;
 		border-radius: 50%;
-		//  box-shadow: 0 4.3px 3.9px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, .15);
-		 box-shadow: 0 1.2px 3px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, .15);
-
-		top: 5.2rem;
+		box-shadow: 0 1.2px 3px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, .15);
 		position: absolute;
+		top: 5.2rem;
 		right: 5.5rem;
 		font-size: 4.2rem;
 

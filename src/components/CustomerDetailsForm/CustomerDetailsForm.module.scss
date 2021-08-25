@@ -1,5 +1,4 @@
 .CustomerDetailsForm {
-
 	display: flex;
 	flex-direction: column;
 	height: 100%;
@@ -107,10 +106,6 @@
 	&-formRow {
 		display: flex;
 		justify-content: space-between;
-
-		// &:last-of-type {
-		// 	margin-bottom: 3rem;
-		// }
 	}
 
 	&-formCol1 {
@@ -181,25 +176,23 @@
 	}	
 
 	&-formControlAddon {
-		background-color: #f6f6f8;
+		background-color: #f2f3f5;
 		display: inline-block;
 		letter-spacing: .3px;
 		text-align: center;
-		flex: .3;
-		display: grid;
-		place-content: center;
 		color: #8d9298;
 		font-size: 1.58rem;
 		font-weight: 500;
+		padding: 0 2.5rem 0 1.8rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	&-formControlPhone {
 		flex: 1;
 		border: none;
-	}
-
-	&-formControlEmail {
-
+		border-radius: 0;
 	}
 
 	&-formControlPincode {
@@ -247,5 +240,4 @@
 			cursor: pointer;
 		}
 	}
-
 }

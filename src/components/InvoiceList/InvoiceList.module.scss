@@ -1,13 +1,58 @@
-.InvoiceList{
+.InvoiceList {
 	background-color: #313942;
 	flex-basis: 24%;
+	height: calc(100vh - 72px);
+	overflow-y: scroll;
 
+	&::-webkit-scrollbar {
+		width: .8rem;
+	}
+	
+	&::-webkit-scrollbar-track {
+		background-color: #3e4853;
+	}
+	
+	&::-webkit-scrollbar-thumb {
+		background-color: #e1e3e9;
+	}
+
+	&-search {
+		color: white;
+		background-color: #38424d;
+		width: 94.5%;
+		margin: 1.8rem auto;
+		border-radius: 100px;
+		display: flex;
+		align-items: center;
+	}
+
+	&-searchIcon {
+		padding-left: 2rem;
+		width: 3.8rem;
+	}
+
+	&-searchInput {
+		width: 100%;
+		padding: 1.5rem 1.5rem 1.5rem 1.4rem;
+		border: none;
+		outline: none;
+		background-color: transparent;
+		color: #72808f;
+		font-size: 1.4rem;
+		font-weight: 500;
+		letter-spacing: .5px;
+		font-family: inherit;
+
+		&::placeholder {
+			color: #72808f;
+		}
+	}
+	
 	&-heading {
 		font-size: 1.26rem;
 		padding: 1rem 2.5rem;
 		font-weight: 700;
 		letter-spacing: .3px;
-		
 	}
 
 	&-heading-text {

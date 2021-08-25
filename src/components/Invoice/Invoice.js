@@ -1,19 +1,26 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import classes from './Invoice.module.scss'
-import InvoiceDetail from '../InvoiceDetail/InvoiceDetail';
+import PropTypes from 'prop-types';
 
-const Invoice = props => {
+import InvoiceDetail from '../InvoiceDetail/InvoiceDetail';
+import classes from './Invoice.module.scss';
+
+const Invoice = ({invoicesExist}) => {
 	return (
 		<div className={classes.Invoice}>
-			<h2 className={classes['Invoice-heading']}>invoice details</h2>
-			<InvoiceDetail />
-		</div>
+			{invoicesExist ?
+				<div>
+					<h2 className={classes['Invoice-heading']}>invoice details</h2>
+					<InvoiceDetail />
+				</div>
+				 :
+				<h2 className={classes['Invoice-heading']}>Please add a new invoice</h2>
+			}
+		</div> 
 	)
 }
 
 Invoice.propTypes = {
-
+	invoicesExist: PropTypes.bool
 }
 
-export default Invoice
+export default Invoice;
